@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>ConfigServlet</servlet-name>
+        <servlet-class>soumya.controller.ConfigServlet</servlet-class>
+        
+        <init-param>
+            <param-name>date</param-name>
+            <param-value>Feb 23, 2021</param-value>
+	</init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ConfigServlet</servlet-name>
+        <url-pattern>/ConfigServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+    <context-param>
+	<param-name>name</param-name>
+	<param-value>Soumya Dey</param-value>
+    </context-param>
+    <context-param>
+	<param-name>language</param-name>
+    	<param-value>Java 15</param-value>
+    </context-param>
+    <context-param>
+	<param-name>ide</param-name>
+    	<param-value>NetBeans IDE 8.2</param-value>
+    </context-param>
+</web-app>
